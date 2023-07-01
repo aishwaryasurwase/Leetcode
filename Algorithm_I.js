@@ -59,3 +59,48 @@
 // //   target = 4;
 // console.log(searchInsert(nums, target));
 // ---
+
+// 977. Squares of a Sorted Array
+// link  - https://leetcode.com/problems/squares-of-a-sorted-array/description/
+// var sortedSquares = function (nums) {
+//   let start = 0;
+//   let end = nums.length - 1;
+//   let ind = end;
+//   let sortedArr = [];
+//   while (ind > -1) {
+//     if (Math.abs(nums[start]) > Math.abs(nums[end])) {
+//       sortedArr[ind--] = nums[start] * nums[start];
+//       start++;
+//     } else {
+//       sortedArr[ind--] = nums[end] * nums[end];
+//       end--;
+//     }
+//   }
+//   return sortedArr;
+// };
+// let nums = [-4, -1, 0, 3, 10];
+// console.log(sortedSquares(nums));
+
+// ---
+// 189. Rotate Array
+// link - https://leetcode.com/problems/rotate-array/description/?envType=study-plan&envId=algorithm-i&plan=algorithm
+
+// const reverse = function (nums, i, j) {
+//   while (i < j) {
+//     [nums[i], nums[j]] = [nums[j], nums[i]];
+//     i++;
+//     j--;
+//   }
+// };
+// var rotate = function (nums, k) {
+//   k %= nums.length;
+//   reverse(nums, 0, nums.length - 1);
+//   reverse(nums, 0, k - 1);
+//   reverse(nums, k, nums.length - 1);
+// };
+// let nums = [1, 2, 3, 4, 5, 6, 7],
+//   k = 3;
+// let nums = [-1, -100, 3, 99],
+//   k = 2;
+
+// console.log(rotate(nums, k));
