@@ -35,8 +35,8 @@
 // -----
 // 33. Search in Rotated Sorted Array
 // link - https://leetcode.com/problems/search-in-rotated-sorted-array/?envType=study-plan&envId=algorithm-ii&plan=algorithm
-var search = function (nums, target) {};
-let nums = [4, 5, 6, 7, 0, 1, 2],
-  target = 0;
+// var search = function (nums, target) {};
+// let nums = [4, 5, 6, 7, 0, 1, 2],
+//   target = 0;
 
-console.log(search(nums, target));
+// console.log(search(nums, target));
